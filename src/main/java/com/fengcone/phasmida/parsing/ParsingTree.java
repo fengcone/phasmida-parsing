@@ -1,4 +1,4 @@
-package com.jd.presort.parsing;
+package com.fengcone.phasmida.parsing;
 
 import com.fengcone.phasmida.core.PhasmidaFactory;
 import lombok.Getter;

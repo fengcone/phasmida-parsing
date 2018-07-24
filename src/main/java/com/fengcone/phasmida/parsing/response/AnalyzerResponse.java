@@ -1,4 +1,4 @@
-package com.jd.presort.parsing.response;
+package com.fengcone.phasmida.parsing.response;
 
 import lombok.Getter;
 import lombok.Setter;

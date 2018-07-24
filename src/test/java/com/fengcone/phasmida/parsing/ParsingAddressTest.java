@@ -1,9 +1,9 @@
-package com.jd.presort.parsing;
+package com.fengcone.phasmida.parsing;
 
 import com.fengcone.phasmida.core.PhasmidaFactory;
+import com.fengcone.phasmida.parsing.response.AnalyzerResponse;
+import com.fengcone.phasmida.parsing.response.AnalyzerResponseUtil;
 import com.fengcone.phasmida.registry.RegistryUtil;
-import com.jd.presort.parsing.response.AnalyzerResponse;
-import com.jd.presort.parsing.response.AnalyzerResponseUtil;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -17,7 +17,7 @@ public class ParsingAddressTest {
         String address = "陕西省榆林市大柳塔";
         ParsingContext context = new ParsingContext();
         context.setParsingString(address);
-        String dataPath = "D:\\WorkSpace\\phasmida-parsing\\src\\test\\java\\com\\jd\\presort\\parsing\\rules.data";
+        String dataPath = "D:\\WorkSpace\\phasmida-parsing\\src\\test\\java\\com\\fengcone\\phasmida\\parsing\\rules.data";
         ParsingTree tree = init(new File(dataPath));
         context.setParsingTree(tree);
         context.parsing();
