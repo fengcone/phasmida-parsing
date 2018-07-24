@@ -18,7 +18,7 @@ public class AnalyzerResponseUtil {
         if (successNodes.size() == 0) {
             return response;
         }
-        ArrayList<Set<ParsingNode>> rules = new ArrayList<Set<ParsingNode>>();
+            ArrayList<Set<ParsingNode>> rules = new ArrayList<Set<ParsingNode>>();
         for (int i = 0; i < level; i++) {
             rules.add(new LinkedHashSet<ParsingNode>());
         }
