@@ -59,7 +59,7 @@ public class ParsingNode {
     }
 
     private boolean handleCrossProcess(ParsingContext context) {
-        if (context.isOpenCross()) {
+        if (!context.isOpenCross()) {
             return false;
         }
         context.setOpenCross(false);

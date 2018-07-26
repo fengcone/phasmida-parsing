@@ -14,7 +14,7 @@ public class ParsingContext {
     private List<ParsingNode> successNodeList = new ArrayList<ParsingNode>();
     private int nowIndex;
     private Map<Long, Integer> startIndexMap = new LinkedHashMap<Long, Integer>();
-    private boolean isOpenCross;
+    private boolean isOpenCross = true;
     private Map<Long, Integer> processedMap = new LinkedHashMap<Long, Integer>();
     private Map<Long, Integer> endIndexMap = new LinkedHashMap<Long, Integer>();
     private Set<ParsingNode> successFatherNodeSet = new HashSet<ParsingNode>();
@@ -27,7 +27,7 @@ public class ParsingContext {
         successNodeList.clear();
         nowIndex = 0;
         startIndexMap.clear();
-        isOpenCross = false;
+        isOpenCross = true;
         processedMap.clear();
         endIndexMap.clear();
         successFatherNodeSet.clear();
